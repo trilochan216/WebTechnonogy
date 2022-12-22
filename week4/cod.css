@@ -1,0 +1,15 @@
+img{
+    background-size: 1800px;
+    background-position: 700%;
+    width:auto;
+    height:400px;
+
+}
+
+body{
+     font-family:impact, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+     font-size: large;
+     color: black;
+     background-color: blueviolet;
+     font-weight: 100;
+}
