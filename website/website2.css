@@ -1,0 +1,26 @@
+body{
+    background-color:rgb(114, 216, 247);
+    color:rgb(254, 254, 254);
+    }
+    
+    
+    h1{
+    
+    font-size: 75px;
+    margin-left: 50px;
+    margin-top: 100px;
+    }
+    
+    h2 {
+    font-size: 30px;
+    margin-left: 50px;
+    margin-left: 795px;
+    margin-top: -300px ;
+    }
+    
+    img{
+    margin-left: 200px;
+    width: 870px;
+    height: 300px;
+    margin-bottom: -370px ;
+    }
