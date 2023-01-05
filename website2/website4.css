@@ -1,0 +1,39 @@
+body{
+    background-color:rgb(60, 106, 107);
+    color:rgb(254, 254, 254);
+    display: flex;
+    }
+    
+    h1{
+    font-size: 80px;
+    margin-left: 50px;
+    }
+
+    h2{
+        font-style: oblique;
+        margin-top: 450px;
+        margin-left: -450px;
+        font-size:35px;
+    }
+      
+    /* h3{
+        margin-left: 50px;
+        margin-top: 50px;
+
+    }
+
+    h4{
+    text-decoration: unset;
+    text-align: center;
+    width: fit-content;
+    font-size: medium;
+    margin-left: 50px;
+    margin-top: 60px;
+    } */
+    
+    img{
+        display: flex;
+        max-width:50%;
+     
+    }
+    
