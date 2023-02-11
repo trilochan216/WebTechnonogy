@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background:url(CVBG.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 19.5px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.CV {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.CV .CV_left {
+  width: 280px;
+  background: #0bb5f4;
+}
+
+.CV .CV_left .CV_profile {
+  width: 100%;
+  height: 300px;
+}
+
+.CV .CV_left .CV_profile img {
+  width: 100%;
+  height: 103%;
+}
+
+.CV .CV_left .CV_content {
+  padding: 0 25px;
+}
+
+.CV .title {
+  margin-bottom: 20px;
+}
+
+.CV .CV_left .bold {
+  color: #fff;
+}
+
+.CV .CV_left .regular {
+  color: #b1eaff;
+}
+
+.CV .CV_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.CV .CV_left .CV_item:last-child,
+.CV .CV_right .CV_item:last-child {
+  border-bottom: 0px;
+}
+
+.CV .CV_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.CV .CV_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.CV .CV_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.CV .icon i,
+.CV .CV_right .CV_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CV .CV_left ul li .data {
+  color: #b1eaff;
+}
+
+.CV .CV_left .CV_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CV .CV_left .CV_skills ul li .skill_name {
+  width: 25%;
+}
+
+.CV .CV_left .CV_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.CV .CV_left .CV_skills ul li .skill_per {
+  width: 15%;
+}
+
+.CV .CV_left .CV_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.CV .CV_left .CV_social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.CV .CV_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.CV .CV_right .bold {
+  color: #0bb5f4;
+}
+
+.CV .CV_right .CV_work ul,
+.CV .CV_right .CV_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.CV .CV_right ul li {
+  position: relative;
+}
+
+.CV .CV_right ul li .date {
+  color: #00008B;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.CV .CV_right ul li .info {
+  margin-bottom: 15px;
+}
+
+.CV .CV_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.CV .CV_right .CV_work ul li:before,
+.CV .CV_right .CV_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #0bb5f4;
+}
+
+.CV .CV_right .CV_work ul li:after,
+.CV .CV_right .CV_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115px;
+  background: #0bb5f4;
+}
+
+.CV .CV_right .CV_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CV .CV_right .CV_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
+
+.CV .CV_right .CV_hobby ul li i {
+  font-size: 30px;
+}
+
+.CV .CV_right .CV_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #0bb5f4;
+}
+
+.CV .CV_right .CV_hobby ul li:last-child:before {
+  display: none;
+}
+
+
+.overlay
+{
+  width: 100%;
+  height: 100vh;
+  background-color: #8B0000;
+  position: fixed;
+  transform: scales(0);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.menu
+{
+  padding: 2rem 2.5rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #fff;
+  z-index: 999;
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
+}
+
+.bar
+.bar::before
+.bar::after
+{
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 2px;
+  background-color: #000080;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all 0.3s;
+}
+
+.bar::before
+{
+  top: -2rem;
+}
+
+.bar::after
+{
+  top: 2rem;
+}
+
+.open .bar
+{
+  background-color: transparent;
+}
+
+.open .bar::before
+{
+  transform: rotate(45deg);
+}
+
+.open .bar::after
+{
+  transform: rotate(-45deg);
+}
+
+.open .bar::before
+.open .bar::after
+{
+  top: 0;
+} 
+
+nav
+{
+  position: fixed;
+  margin-top: -40px;
+  width: 98.6%;
+  height: 80px;
+  line-height: 4.6rem;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  background-color: #000000;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+
+.Logo img
+{
+  
+  width: 321px;
+  height: auto;
+  float: left;
+}
+
+nav ul
+{
+  display: flex;
+  list-style: none;
+ }
+
+ .nav-link
+ {
+  font-size: 1.5rem;
+  color: #00FFFF;
+  margin-right: 2rem;
+  padding: 0 1rem;
+  display: block;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: top;
+  transition: transform 0.25s cubic-bezier(0.55,0.55,0.675,0.19);
+ }
+
+ .nav-link:hover
+ {
+  transform: rotateX(90deg);
+ }
+
+
+ .nav-item:last-child .nav-link
+ {
+  margin-right: 0;
+ }
+
+.nav-link::after
+{
+  background-color: #FF4500;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  padding: inherit;
+  color: #fff;
+  transform: rotateX(-90deg);
+  transform-origin: top;
+ }
+
+ .nav-item:nth-child(odd)
+ {
+  animation: up 1s forwards;
+ }
+
+ .nav-item:nth-child(even)
+ {
+  animation: up 1s forwards;
+ }
+
+
+ @keyframes up
+ {
+  from
+  {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to
+  {
+    transform: translateY(0);
+    opacity: 1;
+  }
+ }
+ @keyframes down
+ {
+  from
+  {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to
+  {
+    transform: translateY(0);
+    opacity: 1;
+  }
+ }
+ 

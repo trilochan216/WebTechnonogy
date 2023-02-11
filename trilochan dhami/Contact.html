@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>OS Blog</title>
+		<link rel="stylesheet" type="text/css" href="Contact.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+<body>
+        <div class="menu">
+			<div class="bar"></div>
+		</div>
+		<div class="overlay"></div>	
+		<nav>
+			<a href="index.html">
+				</a>	
+            
+            <ul>
+        	<li class="nav-item"><a href="Home.html" class="nav-link" data-text="Home">Home</a></li>
+        	<li class="nav-item"><a href="CV.html" class="nav-link" data-text="CV">CV</a></li>
+        	<li class="nav-item"><a href="Blog.html" class="nav-link" data-text="Blog">Blog</a></li>
+        	<li class="nav-item"><a href="Research.html" class="nav-link" data-text="Research">Research</a></li>
+        	<li class="nav-item"><a href="Contact.html" class="nav-link" data-text="Contact">Contact</a></li>
+            </ul>
+        </nav>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" required>
+			<input type="email" placeholder="Email" required>
+			<input type="password" placeholder="Password" required>
+			<button>Register</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Log In</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" required>
+			<input type="password" placeholder="Password" required>
+			<a href="#">Forgot your password?</a>
+			<button>Log In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Already have an existing account?</h1>
+				<p>Please login with your acocunt details.</p>
+				<button class="ghost" id="signIn">Log In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hey! New here?</h1>
+				<p>Join us now registering your new account.</p>
+				<button class="ghost" id="signUp">Register</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
